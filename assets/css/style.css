@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap');
+
+/* Configuração GERAL */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --preto: #0C0B0B;
+    --cinza: #0F0E0E;
+    --branco: #B7B7B7;
+    --verde: #046313;
+    --azul: #044A7D;
+    --amarelo: #725200;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+#container {
+    min-width: 100vw;
+    width: 32rem;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: var(--preto);
+    color: var(--branco);
+    padding-top: 8.5rem;
+}
+
+.col-1, .col-2, .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-1, .col-2 {
+    background-color: var(--cinza);
+}
+
+/* Terminação da configuração GERAL */
+
+/* Configuração da coluna 1 */
+
+.col-1 img {
+    width: 8rem;
+    border-radius: 5rem;
+}
+
+.imagem {
+    position: relative;
+}
+
+.imagem img {
+    position: absolute;
+    top: -3.5rem;
+    left: -4rem;
+    right: 0;
+    bottom: 0;
+}
+
+.texto {
+    padding-top: 5rem;
+}
+
+.texto h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.texto p {
+    margin: .1rem 0 .5rem 0;
+    font-size: 1.5rem;
+}
+
+.texto p a {
+    color: #808080;
+}
+
+/* Configurando o butão */
+.butao button {
+    color: var(--branco);
+    background-color: var(--cinza);
+    border: none;
+    padding: .5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.butao i {
+    margin-right: .8rem;
+}
+
+
+/* Configuração da coluna 1 */
+.col-2 {
+    gap: 1.8rem;
+    padding: 3rem 0 2.5rem 0;
+}
+
+.col-2 span {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.col-2 h2 {
+    padding-top: .5rem;
+}
+
+.row-1, .row-2, .row-3 {
+    width: 70%;
+    padding: 1.2rem 0 1.2rem 1.5rem;
+    border-radius: .6rem;
+}
+
+.row-1 {
+    background-color: var(--verde);
+}
+
+.row-2 {
+    background-color: var(--azul);
+}
+
+.row-3 {
+    background-color: var(--amarelo);
+}
+
+/* @media screen and (min-width: 1024px) */
+
+@media screen and (min-width: 1024px){
+    body {
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    a {
+        cursor: pointer;
+    }
+    
+    #container {
+        min-width: 100vw;
+        width: 102.4rem;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .col-1 {
+        flex-direction: row;
+        padding-top: 5rem;
+    }
+
+    .imagem {
+        position: initial;
+    }
+    
+    .imagem img {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-right: .8rem;
+    }
+
+    .texto {
+        padding: 0;
+        align-items: flex-start;
+        margin-right: 9rem;
+    }
+
+    /* Configuração da coluna 2 */
+    .col-2 {
+        flex-direction: row;
+    }
+
+    .col-2 h2 {
+        padding: 0;
+    }
+    .row-1, .row-2, .row-3 {
+        width: 12rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: .5rem;
+    }
+
+    .col-2 {
+        padding-bottom: 5rem;
+        padding-inline: 2rem;
+    }
+    
+    .col-1, .col-2 {
+        width: 52rem;
+        margin: 0;
+    }
+}
